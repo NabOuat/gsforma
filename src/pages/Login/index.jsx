@@ -186,7 +186,7 @@ export default function Login() {
           <Box sx={{ textAlign: 'center', mb: 3.5, pt: .5 }}>
 
             {/* Logo */}
-            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2, animation: 'logoGlow 3s ease-in-out infinite' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
               <img src="/logo.png" alt="GSFORMA" style={{ width: 100, height: 100, objectFit: 'contain' }} />
             </Box>
 
@@ -424,6 +424,9 @@ export default function Login() {
           {/* Footer */}
           <Typography sx={{ textAlign: 'center', fontSize: '11px', color: '#9eaab4', mt: 3 }}>
             © 2026 AFOR Côte d'Ivoire — GSFORMA v1.0.0
+          </Typography>
+          <Typography sx={{ textAlign: 'center', fontSize: '10px', color: '#9eaab4', mt: 1, fontWeight: 600 }}>
+            Powered by AFOR
           </Typography>
         </Box>
       </Box>
