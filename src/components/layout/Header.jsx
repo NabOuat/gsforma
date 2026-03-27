@@ -70,16 +70,15 @@ const Header = () => {
               height: 40,
               borderRadius: '10px',
               overflow: 'hidden',
-              bgcolor: '#fff',
+              bgcolor: 'transparent',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               flexShrink: 0,
-              boxShadow: '0 8px 24px rgba(46,139,87,.35)',
               animation: 'logoGlow 3s ease-in-out infinite',
             }}
           >
-            <img src="/logo.png" alt="GSFORMA" style={{ width: 36, height: 36, objectFit: 'contain' }} />
+            <img src="/logo-header.png" alt="GSFORMA" style={{ width: 36, height: 36, objectFit: 'contain' }} />
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
             <Box sx={{ width: 4, height: 4, borderRadius: '50%', bgcolor: '#4CAF50' }} />
