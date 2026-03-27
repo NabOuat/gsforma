@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="public/logo.png" alt="GSFORMA Logo" width="150" height="150">
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GSFORMA
 
-## Available Scripts
+## 📋 Description
 
-In the project directory, you can run:
+GSFORMA est une application web moderne de gestion de formations conçue pour simplifier l'administration et le suivi des programmes de formation. Built with React, elle offre une interface intuitive et responsive pour la gestion complète des activités de formation.
 
-### `npm start`
+## 🚀 Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🏠 **Tableau de Bord**
+- Vue d'ensemble des statistiques de formation
+- Accès rapide aux fonctionnalités principales
+- Indicateurs de performance en temps réel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📚 **Gestion des Formations**
+- Création et modification de programmes de formation
+- Suivi des sessions et des participants
+- Gestion des ressources pédagogiques
 
-### `npm test`
+### 📝 **Édition de Contenu**
+- Éditeur de contenu riche
+- Support multimédia
+- Templates personnalisables
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔧 **Maintenance**
+- Gestion des pannes et incidents
+- Suivi des interventions techniques
+- Planification des maintenances préventives
 
-### `npm run build`
+### ⚙️ **Paramètres**
+- Configuration utilisateur
+- Gestion des permissions
+- Personnalisation de l'interface
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📢 **Sensibilisation**
+- Campagnes de sensibilisation
+- Communications internes
+- Alertes et notifications
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Stack Technique
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React 18
+- **Routing**: React Router
+- **Styling**: CSS3 avec thèmes personnalisés
+- **Context Management**: React Context API
+- **Build Tool**: Create React App
 
-### `npm run eject`
+## 📁 Structure du Projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+gsforma/
+├── public/
+│   ├── logo.png          # Logo de l'application
+│   ├── bg-login.jpg      # Image de fond pour la connexion
+│   └── index.html        # Template HTML principal
+├── src/
+│   ├── components/       # Composants réutilisables
+│   │   ├── common/       # Composants communs
+│   │   └── layout/       # Composants de mise en page
+│   ├── context/          # Contexte global de l'application
+│   ├── pages/            # Pages de l'application
+│   ├── routes/           # Configuration des routes
+│   └── styles/           # Styles globaux et thèmes
+├── package.json
+└── README.md
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Cloner le repository**
+   ```bash
+   git clone https://github.com/NabOuat/gsforma.git
+   cd gsforma
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Démarrer l'application**
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Ouvrir votre navigateur**
+   Naviguez vers `http://localhost:3000`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📱 Pages de l'Application
 
-### Code Splitting
+- **Accueil** (`/`) - Tableau de bord principal
+- **Formation** (`/formation`) - Gestion des formations
+- **Édition** (`/edition`) - Édition de contenu
+- **Maintenance** (`/maintenance`) - Gestion technique
+- **Paramètres** (`/parametres`) - Configuration
+- **Sensibilisation** (`/sensibilisation`) - Communications
+- **Mise à jour** (`/mise-a-jour`) - Gestion des mises à jour
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Personnalisation
 
-### Analyzing the Bundle Size
+L'application utilise un système de thèmes configurable dans `src/styles/theme.js`. Vous pouvez facilement personnaliser :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Les couleurs principales et secondaires
+- Les polices et typographies
+- Les espacements et marges
+- Les animations et transitions
 
-### Making a Progressive Web App
+## 🔐 Authentification
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+L'application inclut une page de connexion sécurisée avec :
+- Authentification par identifiants
+- Session utilisateur persistante
+- Gestion des permissions d'accès
 
-### Advanced Configuration
+## 📈 Développement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Scripts disponibles
+- `npm start` - Démarrer l'application en mode développement
+- `npm test` - Lancer les tests
+- `npm run build` - Créer une version de production
+- `npm run eject` - Éjecter la configuration (irréversible)
 
-### Deployment
+### Conventions de code
+- Utilisation de composants fonctionnels React
+- Hooks React pour la gestion d'état
+- CSS Modules pour le styling
+- ESLint pour la qualité du code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contribuer
 
-### `npm run build` fails to minify
+1. Fork le projet
+2. Créer une branche feature (`git checkout -b feature/AmazingFeature`)
+3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrir une Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 Licence
+
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+
+## 👨‍💻 Auteur
+
+**NabOuat** - *Développeur Full Stack*
+- GitHub: [@NabOuat](https://github.com/NabOuat)
+- Projet: [GSFORMA](https://github.com/NabOuat/gsforma)
+
+## 📞 Support
+
+Pour toute question ou support technique, veuillez contacter :
+- Créer une issue sur GitHub
+- Envoyer un email au développeur
+
+---
+
+<div align="center">
+  <strong>GSFORMA - La solution moderne pour la gestion de vos formations</strong>
+</div>
