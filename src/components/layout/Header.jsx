@@ -15,6 +15,13 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { useAppContext } from '../../context/AppContext';
 
+const CSS = `
+  @keyframes logoGlow {
+    0%,100% { box-shadow:0 8px 24px rgba(255,152,0,.35); }
+    50%      { box-shadow:0 8px 32px rgba(46,139,87,.5); }
+  }
+`;
+
 const DRAWER_WIDTH = 260;
 
 const Header = () => {
@@ -22,7 +29,9 @@ const Header = () => {
   const { sidebarOpen, toggleSidebar, pageTitle, user } = useAppContext();
 
   return (
-    <AppBar
+    <>
+      <style>{CSS}</style>
+      <AppBar
       position="fixed"
       sx={{
         zIndex: theme.zIndex.drawer + 1,
@@ -57,19 +66,20 @@ const Header = () => {
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, flexGrow: 1 }}>
           <Box
             sx={{
-              width: 34,
-              height: 34,
-              borderRadius: '9px',
+              width: 40,
+              height: 40,
+              borderRadius: '10px',
               overflow: 'hidden',
               bgcolor: '#fff',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               flexShrink: 0,
-              boxShadow: '0 4px 12px rgba(0,0,0,0.25)',
+              boxShadow: '0 8px 24px rgba(46,139,87,.35)',
+              animation: 'logoGlow 3s ease-in-out infinite',
             }}
           >
-            <img src="/logo.png" alt="GSFORMA" style={{ width: 30, height: 30, objectFit: 'contain' }} />
+            <img src="/logo.png" alt="GSFORMA" style={{ width: 36, height: 36, objectFit: 'contain' }} />
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
             <Box sx={{ width: 4, height: 4, borderRadius: '50%', bgcolor: '#4CAF50' }} />
@@ -164,6 +174,7 @@ const Header = () => {
         </Box>
       </Toolbar>
     </AppBar>
+    </>
   );
 };
 
